@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: var(--font-inter);
+  --font-giloryBold: var(--font-giloryBold);
+  --font-giloryMedium: var(--font-giloryMedium);
+  --font-gilorySemibold: var(--font-gilorySemibold);
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+}
+
+.bold-text {
+  font-family: var(--font-giloryBold), sans-serif;
+}
+
+.medium-text {
+  font-family: var(--font-giloryMedium), sans-serif;
+}
+
+.semibold-text {
+  font-family: var(--font-gilorySemibold), sans-serif;
+}
+
+
+@property --border-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: '<angle>';
+}
+
+/* Stroke Effect */
+.stroke-blue-400 {
+  -webkit-text-stroke: 2px white; /* Blue outline */
+}
